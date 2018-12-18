@@ -5,7 +5,7 @@ addpath(genpath('/codes/TOF_pickers'))
 IMCL_rate = linspace(0,20,21);
 frq = 5e6;
 for ii = 5
-    for jj = 1:3
+    for jj = 1:length(IMCL_rate)
         myfilename = sprintf('H:/data/kwave/medium/2018_11_07_layer_medium/Layer_medium_boundary_%0.1fmm_ IMCL%d%%.mat',...
             ii,IMCL_rate(jj));
         load(myfilename)
